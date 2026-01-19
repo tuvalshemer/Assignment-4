@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Colledge Admission Calculator</h1>
+    
+    <form name="AdmissionForm">
+        <p>Age: <input type="number" name="Age" id="age"></p>
+
+         <fieldset>
+        <legend>Select from the options below:</legend>
+        <p>
+            <input type="radio" name="Options" value="BagrutPsychometric" id="optionBP" onclick="HandleOptionChange()">
+            <label for="optionBP">Bagrut and Psychometric</label>
+        
+            <input type="radio" name="Options" value="BagrutMechina" id="optionBM" onclick="HandleOptionChange()">
+            <label for="optionBM">Bagrut and Mechina</label>
+        </p>
+       </fieldset>
+        
+        <p>Psychometric Grade: <input type="number" name="PsychometricGrade" id="psychometricGrade"></p>
+
+        <p>Bagrut Grade: <input type="number" name="BagrutGrade" id="bagrutGrade"></p>
+        
+        <p>Mechina Grade: <input type="number" name="MechinaGrade" id="mechinaGrade"></p>
+        
+       
+        <p>
+            <button type="button" onclick="Validate()">Validate</button>
+        </p>
+    </form>
+    
+    <div id="resultMessage"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
